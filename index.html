@@ -25,14 +25,15 @@
                         <img src="images/logo.png" alt="Logo" style="height: 40px; width: 40px;margin-top: 8px;">Cortex
                     </a>
                     <div class="items">
+                        <a href="#About" class="nav-link ">About</a>
                         <a href="#Features" class="nav-link ">Features</a>
-                        <a href="#Solutions" class="nav-link ">Solutions</a>
                         <a href="#Pricing" class="nav-link ">Pricing</a>
+                        <a href="#Solutions" class="nav-link ">Solutions</a>
                         <a href="#Contact" class="nav-link ">Contact</a>
                     </div>
                 </nav>
             </div>
-            <div class="container ">
+            <div class="container position-relative mb-5 ">
                 <p class="fw-bold" style="font-size: 50px; text-align: center; margin-top: 2rem;">
                     Protecting your digital
                     world,
@@ -46,7 +47,7 @@
                     <a href="#Contact" type="button" class="btn btn-outline-light">Contact Us</a>
                 </div>
             </div>
-            <div class="container ">
+            <!-- <div class="container ">
                 <div class="bot d-flex justify-content-lg-around align-content-between gap-5 mt-5">
                     <div class="left">
                         <span class="fs-2 fw-bold">4.8+</span><br>
@@ -67,10 +68,92 @@
                         </div>
                     </div>
                 </div>
-            </div>
-            <hr>
+            </div> 
+            <hr>-->
             <br>
         </div>
+
+        <section id="About" id="Tabs" class="section">
+            <div class="container">
+                <ul class="nav nav-tabs" id="myTab" role="tablist">
+                    <li class="nav-item" role="presentation">
+                        <button class="nav-link active" id="about-tab" data-bs-toggle="tab"
+                            data-bs-target="#about-tab-pane" type="button" role="tab" aria-controls="about-tab-pane"
+                            aria-selected="true">About Us</button>
+                    </li>
+                    <li class="nav-item" role="presentation">
+                        <button class="nav-link" id="services-tab" data-bs-toggle="tab"
+                            data-bs-target="#services-tab-pane" type="button" role="tab"
+                            aria-controls="services-tab-pane" aria-selected="false">Services</button>
+                    </li>
+                    <li class="nav-item" role="presentation">
+                        <button class="nav-link" id="team-tab" data-bs-toggle="tab" data-bs-target="#team-tab-pane"
+                            type="button" role="tab" aria-controls="team-tab-pane" aria-selected="false">Our
+                            Team</button>
+                    </li>
+                </ul>
+                <div class="tab-content glass-card" id="myTabContent">
+                    <div class="tab-pane fade show active" id="about-tab-pane" role="tabpanel"
+                        aria-labelledby="about-tab" tabindex="0">
+                        <div class="p-6">
+                            <h3 class="text-3xl font-semibold mb-3 text-white">Our Mission</h3>
+                            <p class="text-gray-400 text-lg">
+                                Cortex is dedicated to building a safer digital world. We believe that
+                                the best defense is an intelligent, proactive one. Our AI models analyze
+                                threats in real-time, predicting and neutralizing risks before they can
+                                cause harm. We empower businesses to operate securely and with confidence.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="tab-pane fade" id="services-tab-pane" role="tabpanel" aria-labelledby="services-tab"
+                        tabindex="0">
+                        <div class="p-6">
+                            <h3 class="text-3xl font-semibold mb-3 text-white">Comprehensive Services</h3>
+                            <ul class="list-disc list-inside text-gray-400 text-lg space-y-2">
+                                <li><span class="font-bold">Real-time Threat Monitoring:</span> Our AI continuously
+                                    scans your
+                                    network for suspicious activity.</li>
+                                <li><span class="font-bold">Automated Incident Response:</span> The system can
+                                    autonomously
+                                    quarantine threats without human intervention.</li>
+                                <li><span class="font-bold">Vulnerability Assessment:</span> Regular scans identify and
+                                    report
+                                    weaknesses in your infrastructure.</li>
+                                <li><span class="font-bold">24/7 Expert Support:</span> Our team of security analysts is
+                                    always available to assist you.</li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="tab-pane fade" id="team-tab-pane" role="tabpanel" aria-labelledby="team-tab"
+                        tabindex="0">
+                        <div class="p-6">
+                            <h3 class="text-3xl font-semibold mb-3 text-white">Meet the Innovators</h3>
+                            <div class="flex flex-col md:flex-row items-center space-y-4 md:space-y-0 md:space-x-8">
+                                <div class="text-center">
+                                    <img src="images\Jane.jpg"
+                                        class="rounded-full w-24 h-24 mb-2 mx-auto" alt="Jane Doe">
+                                    <h4 class="font-semibold text-lg text-white">Jane Doe</h4>
+                                    <p class="text-gray-500">Chief Technology Officer</p>
+                                </div>
+                                <div class="text-center">
+                                    <img src="images\john.jpg"
+                                        class="rounded-full w-24 h-24 mb-2 mx-auto" alt="John Smith">
+                                    <h4 class="font-semibold text-lg text-white">John Smith</h4>
+                                    <p class="text-gray-500">Lead AI Scientist</p>
+                                </div>
+                                <div class="text-center">
+                                    <img src="images\Emily.jpg"
+                                        class="rounded-full w-24 h-24 mb-2 mx-auto" alt="Emily Chen">
+                                    <h4 class="font-semibold text-lg text-white">Emily Chen</h4>
+                                    <p class="text-gray-500">Head of Threat Intelligence</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
         <!-- Features Section -->
         <div id="Features" class="Features p-4 mt-5 m-4">
             <p class="fw-bold" style="font-size: 50px; text-align: center; margin-top: 1rem;">
@@ -153,9 +236,174 @@
         <hr>
 
         <!-- Solutions Section -->
-        <div id="Solutions" class="Solutions p-4 mt-5 m-4"></div>
+        <div id="Pricing" class="Pricing p-4 mt-5 m-4">
+            <p class="fw-bold" style="font-size: 50px; text-align: center; margin-top: 1rem;">
+                <span class="gradient-byte">Pricing</span>
+            </p>
+            <div class="row justify-content-center g-4 mt-3">
+                <!-- Basic Plan -->
+                <div class="col-lg-4 col-md-6">
+                    <div class="card custom-card h-100">
+                        <div class="card-body">
+                            <h3 class="card-title text-2xl font-semibold text-white mb-2">Basic</h3>
+                            <p class="text-xl text-gray-400 mb-4">For individuals & startups</p>
+                            <div class="price text-white mb-4">
+                                <span class="text-4xl font-bold">$29</span>
+                                <span class="text-xl text-gray-400">/mo</span>
+                            </div>
+                            <ul class="list-group list-group-flush mb-4 text-white text-start">
+                                <li class="list-group-item text-white">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                                        fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                        stroke-linejoin="round">
+                                        <polyline points="20 6 9 17 4 12"></polyline>
+                                    </svg>
+                                    Threat Detection
+                                </li>
+                                <li class="list-group-item text-white">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                                        fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                        stroke-linejoin="round">
+                                        <polyline points="20 6 9 17 4 12"></polyline>
+                                    </svg>
+                                    Real-time Monitoring
+                                </li>
+                                <li class="list-group-item text-white">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                                        fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                        stroke-linejoin="round">
+                                        <polyline points="20 6 9 17 4 12"></polyline>
+                                    </svg>
+                                    24/7 Support
+                                </li>
+                            </ul>
+                            <a href="#" class="btn btn-outline-info w-100">Choose Basic</a>
+                        </div>
+                    </div>
+                </div>
 
+                <!-- Pro Plan (Most Popular) -->
+                <div class="col-lg-4 col-md-6">
+                    <div class="card custom-card h-100 highlight-card">
+                        <div class="card-body">
+                            <h3 class="card-title text-2xl font-semibold text-white mb-2">Pro</h3>
+                            <p class="text-xl text-gray-400 mb-4">Most popular choice</p>
+                            <div class="price text-white mb-4">
+                                <span class="text-4xl font-bold">$79</span>
+                                <span class="text-xl text-gray-400">/mo</span>
+                            </div>
+                            <ul class="list-group list-group-flush mb-4 text-start">
+                                <li class="list-group-item text-white">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                                        fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                        stroke-linejoin="round">
+                                        <polyline points="20 6 9 17 4 12"></polyline>
+                                    </svg>
+                                    All Basic features
+                                </li>
+                                <li class="list-group-item text-white">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                                        fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                        stroke-linejoin="round">
+                                        <polyline points="20 6 9 17 4 12"></polyline>
+                                    </svg>
+                                    Advanced Encryption
+                                </li>
+                                <li class="list-group-item text-white">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                                        fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                        stroke-linejoin="round">
+                                        <polyline points="20 6 9 17 4 12"></polyline>
+                                    </svg>
+                                    AI Anomaly Detection
+                                </li>
+                                <li class="list-group-item text-white">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                                        fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                        stroke-linejoin="round">
+                                        <polyline points="20 6 9 17 4 12"></polyline>
+                                    </svg>
+                                    Secure Cloud Integration
+                                </li>
+                            </ul>
+                            <a href="#" class="btn btn-info w-100">Choose Pro</a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Enterprise Plan -->
+                <div class="col-lg-4 col-md-6">
+                    <div class="card custom-card h-100">
+                        <div class="card-body">
+                            <h3 class="card-title text-2xl font-semibold text-white mb-2">Enterprise</h3>
+                            <p class="text-xl text-gray-400 mb-4">Custom solutions for large scale</p>
+                            <div class="price text-white mb-4">
+                                <span class="text-4xl font-bold">Custom</span>
+                            </div>
+                            <ul class="list-group list-group-flush mb-4 text-start">
+                                <li class="list-group-item text-white">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                                        fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                        stroke-linejoin="round">
+                                        <polyline points="20 6 9 17 4 12"></polyline>
+                                    </svg>
+                                    Dedicated Threat Analyst
+                                </li>
+                                <li class="list-group-item text-white">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                                        fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                        stroke-linejoin="round">
+                                        <polyline points="20 6 9 17 4 12"></polyline>
+                                    </svg>
+                                    On-Site Security Audits
+                                </li>
+                                <li class="list-group-item text-white">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                                        fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                        stroke-linejoin="round">
+                                        <polyline points="20 6 9 17 4 12"></polyline>
+                                    </svg>
+                                    Vulnerability Assessment
+                                </li>
+                                <li class="list-group-item text-white">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                                        fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                        stroke-linejoin="round">
+                                        <polyline points="20 6 9 17 4 12"></polyline>
+                                    </svg>
+                                    24/7 Priority Support
+                                </li>
+                            </ul>
+                            <a href="#" class="btn btn-outline-info w-100">Contact Sales</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <hr>
+        <!-- Solutions Section -->
+        <div id="Solutions" class="Solutions p-4 mt-5 m-4">
+            <p class="fw-bold" style="font-size: 50px; text-align: center; margin-top: 1rem;">
+                <span class="gradient-byte">Solutions</span>
+            </p>
+            <div class="row justify-content-center g-4 mt-3">
+                <!-- Solution 1 -->
+                <div class="col-lg-4 col-md-6">
+                    <div class="card custom-card h-100">
+                        <div class="card-body">
+                            <h3 class="card-title text-2xl font-semibold text-white mb-2">Cloud Security</h3>
+                            <p class="text-gray-400 mb-4">Protect your cloud infrastructure with our comprehensive
+                                security solutions designed to safeguard your data and applications in the cloud.</p>
+                            <a href="#" class="btn btn-outline-info w-100">Learn More</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
     </div>
+    <!-- Bootstrap JS for Tabs functionality -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
+        crossorigin="anonymous"></script>
 </body>
 
 </html>

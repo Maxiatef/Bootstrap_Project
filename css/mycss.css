@@ -43,7 +43,7 @@ p {
 
 .hero {
     /* background-size: 100vw 100vh; */
-    height: 500px;
+    height: 550px;
 }
 
 /* Add this to your mycss.css file */
@@ -85,19 +85,77 @@ p {
     max-width: 300px;
 }
 
+.section {
+    padding: 6rem 1rem;
+}
+
+/* Glassmorphism for cards and sections */
+.glass-card {
+    background: rgba(255, 255, 255, 0.05);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    border-radius: 12px;
+    box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.37);
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+    transition: transform 0.3s ease;
+}
+
+
+
+/* Custom Tabs Styling */
+.nav-tabs {
+    border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+    justify-content: center;
+    margin-bottom: 2rem;
+}
+
+.nav-tabs .nav-link {
+    background: transparent;
+    color: #ccc;
+    border: none;
+    border-bottom: 2px solid transparent;
+    margin: 0 1rem;
+    padding: 0.75rem 0;
+    transition: all 0.3s ease;
+}
+
+.nav-tabs .nav-link:hover {
+    color: #fff;
+}
+
+.nav-tabs .nav-link.active {
+    color: #fff;
+    background-color: #e0e0e000;
+    border-color: #6a11cb;
+    font-weight: bold;
+}
+
+/* Fixed height for tab content */
+.tab-content {
+    padding: 2rem;
+    height: 400px;
+    /* Fixed height */
+    overflow-y: auto;
+    /* Enable vertical scrolling */
+}
+
 .Features {
     /* Remove position: sticky, top: 0, z-index from here */
     position: relative;
 
-    background: rgba(131, 131, 131, 0); /* Your existing background */
-    border: 0.5px solid rgba(134, 134, 134, 0.227); /* Your existing border */
+    background: rgba(131, 131, 131, 0);
+    /* Your existing background */
+    border: 0.5px solid rgba(134, 134, 134, 0.227);
+    /* Your existing border */
     border-radius: 16px;
     box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
     backdrop-filter: blur(3.0px);
     -webkit-backdrop-filter: blur(3.0px);
 
-    margin-bottom: 4rem; /* Add a bottom margin if there's content below it */
+    margin-bottom: 4rem;
+    /* Add a bottom margin if there's content below it */
 }
+
 /* responsive cards 4 */
 @media (max-width: 1200px) {
     .cards {
@@ -111,9 +169,71 @@ p {
         margin-bottom: 1rem;
     }
 }
-.Solutions{
+
+.Pricing {
     position: relative;
-    background-color: #cbcbcb; 
-    height: 500px;
     border-radius: 16px;
+    margin-bottom: 4rem;
+}
+
+
+.pricing-section {
+    padding: 6rem 1rem;
+}
+
+
+.custom-card {
+    background: rgba(255, 255, 255, 0.05);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    border-radius: 12px;
+    box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.37);
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+    transition: transform 0.3s ease;
+}
+
+.custom-card:hover {
+    transform: translateY(-8px);
+}
+
+@media (max-width: 1300px) {
+    .custom-card {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .custom-card {
+        width: 100%;
+        max-width: 400px;
+        margin-bottom: 1rem;
+    }
+}
+
+.card-body {
+    padding: 2.5rem 1.5rem;
+}
+
+.highlight-card {
+    border: 2px solid #6a11cb;
+    box-shadow: 0 8px 32px 0 rgba(106, 17, 203, 0.5);
+}
+
+.list-group-item {
+    background-color: transparent !important;
+    border: none;
+    padding: 0.5rem 0;
+    display: flex;
+    align-items: center;
+}
+
+.list-group-item svg {
+    color: #6a11cb;
+    margin-right: 0.5rem;
+}
+
+
+.Solutions {
+    position: relative;
+    border-radius: 16px;
+    margin-bottom: 4rem;
 }
