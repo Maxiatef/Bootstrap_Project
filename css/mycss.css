@@ -237,3 +237,75 @@ p {
     border-radius: 16px;
     margin-bottom: 4rem;
 }
+
+/* Styling for the main footer container */
+.footer-20192 {
+    position: relative;
+    width: 100%;
+    padding: 4rem 0;
+    background: rgba(255, 255, 255, 0.05);
+    /* A darker, slightly translucent background */
+    color: #a0a0a0;
+    /* Lighter text for contrast */
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+}
+
+/* Styles for the "Ready for a next project?" section */
+.footer-20192 .cta {
+    background: rgba(45, 45, 45, 0.9);
+    /* A slightly darker, solid background for the CTA */
+    padding: 2.5rem 3rem;
+    border-radius: 10px;
+    margin-bottom: 3rem;
+    color: #ffffff;
+}
+
+.footer-20192 .cta h2,
+.footer-20192 .cta h3 {
+    color: #ffffff;
+    margin: 0;
+}
+
+/* Styles for the main content rows within the footer */
+.footer-20192 .site-section {
+    padding: 0;
+}
+
+/* Styles for the links */
+.footer-20192 .links a {
+    color: #a0a0a0;
+    text-decoration: none;
+    transition: color 0.3s ease;
+    display: block;
+    margin-bottom: 0.5rem;
+}
+
+.footer-20192 .links a:hover {
+    color: #fff;
+    /* White on hover for a subtle effect */
+}
+
+/* Heading styles */
+.footer-20192 h3 {
+    font-size: 1.1rem;
+    font-weight: 600;
+    color: #ffffff;
+    margin-bottom: 1.5rem;
+}
+
+/* Logo and copyright */
+.footer-20192 .footer-logo {
+    color: #ffffff;
+    font-size: 1.5rem;
+    font-weight: 700;
+    text-decoration: none;
+}
+
+.footer-20192 .copyright {
+    font-size: 0.8rem;
+    margin-top: 0.5rem;
+    text-align: left;
+    /* This is the fix to align the text left */
+}
+
