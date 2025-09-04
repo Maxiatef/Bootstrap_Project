@@ -87,6 +87,8 @@ p {
 
 .Features {
     /* background-color: #000000; */
+        position: relative;
+
     height: 500px;
     background: rgba(131, 131, 131, 0);
     border-radius: 16px;
@@ -97,7 +99,7 @@ p {
     -webkit-backdrop-filter: blur(3.0px);
 }
 /* responsive cards 4 */
-@media (max-width: 900px) {
+@media (max-width: 1200px) {
     .cards {
         flex-direction: column;
         align-items: center;
@@ -110,8 +112,8 @@ p {
     }
 }
 .Solutions{
+    position: relative;
     background-color: #cbcbcb; 
     height: 500px;
     border-radius: 16px;
-
 }
