@@ -86,17 +86,17 @@ p {
 }
 
 .Features {
-    /* background-color: #000000; */
-        position: relative;
+    /* Remove position: sticky, top: 0, z-index from here */
+    position: relative;
 
-    height: 500px;
-    background: rgba(131, 131, 131, 0);
-    border-radius: 16px;
-    border: 0.5px solid rgba(134, 134, 134, 0.227);
+    background: rgba(131, 131, 131, 0); /* Your existing background */
+    border: 0.5px solid rgba(134, 134, 134, 0.227); /* Your existing border */
     border-radius: 16px;
     box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
     backdrop-filter: blur(3.0px);
     -webkit-backdrop-filter: blur(3.0px);
+
+    margin-bottom: 4rem; /* Add a bottom margin if there's content below it */
 }
 /* responsive cards 4 */
 @media (max-width: 1200px) {
